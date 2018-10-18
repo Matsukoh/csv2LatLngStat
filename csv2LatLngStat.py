@@ -19,7 +19,7 @@ with open('outLatLngStat.txt', 'w') as f_out:
             print(row)
 
             f_out.write(" " * 18)
-            f_out.write("{" + "lat: " + row[2] + ", " + "lng: " + row[1] + ", " + "stat: " + row[0] + "}")
+            f_out.write("{" + "lat: " + row[1] + ", " + "lng: " + row[2] + ", " + "stat: " + row[0] + "}")
             if n != num_lines:
                 f_out.write("," + "\n")
             else:
